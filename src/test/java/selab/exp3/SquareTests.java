@@ -30,4 +30,11 @@ public class SquareTests {
         this.square.setHeight(20);
         Assert.assertEquals(20, this.square.getWidth(), 1e-10);
     }
+
+    @Test
+    public void setSide_SampleSide_SetsWidthAndHeight() {
+        this.square.setSide(30);
+        Assert.assertEquals(30, this.square.getWidth(), 1e-10);
+        Assert.assertEquals(30, this.square.getHeight(), 1e-10);
+    }
 }
