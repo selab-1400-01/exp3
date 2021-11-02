@@ -5,20 +5,33 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class RectangleTests {
+
+    Rectangle rectangle;
+
+
+    @Before
+    public void setup() {
+        this.rectangle = new Rectangle();
+    }
     @Test
     public void computeArea_SampleHeightAndWidth_ReturnsCorrectArea() {
-        Rectangle rectangle = new Rectangle(10, 5);
+        rectangle.setHeight(10);
+        rectangle.setWidth(5);
         float area = rectangle.computeArea();
         Assert.assertEquals(50, area, 1e-10);
     }
 
     @Test
     public void computeArea_ZeroHeightOrWidth_ReturnsZeroArea() {
-        Rectangle rectangle = new Rectangle(0, 5);
+        rectangle.setHeight(0);
+        rectangle.setWidth(5);
+
         float area = rectangle.computeArea();
         Assert.assertEquals(0, area, 1e-10);
 
-        rectangle = new Rectangle(10, 0);
+        rectangle.setHeight(10);
+        rectangle.setWidth(0);
+
         area = rectangle.computeArea();
         Assert.assertEquals(0, area, 1e-10);
     }
