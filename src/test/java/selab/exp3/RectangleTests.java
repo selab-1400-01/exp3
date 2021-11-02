@@ -18,7 +18,7 @@ public class RectangleTests {
         float area = rectangle.computeArea();
         Assert.assertEquals(0, area, 1e-10);
 
-        Rectangle rectangle = new Rectangle(10, 0);
+        rectangle = new Rectangle(10, 0);
         area = rectangle.computeArea();
         Assert.assertEquals(0, area, 1e-10);
     }
