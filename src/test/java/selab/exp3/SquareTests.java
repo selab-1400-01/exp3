@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class SquareTests {
-    Square square;
+    private Square square;
 
     @Before
     public void setup() {
