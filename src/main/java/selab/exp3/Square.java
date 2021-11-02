@@ -11,13 +11,16 @@ public class Square extends Rectangle {
 
     @Override
     public void setHeight(float height) {
-        super.setHeight(height);
-        super.setWidth(height);
+        this.setSide(height);
     }
 
     @Override
     public void setWidth(float width) {
-        super.setWidth(width);
-        super.setHeight(width);
+        this.setSide(width);
+    }
+
+    public void setSide(float side) {
+        super.setHeight(side);
+        super.setWidth(side);
     }
 }
