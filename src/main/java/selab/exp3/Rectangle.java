@@ -12,11 +12,11 @@ public class Rectangle {
     public Rectangle() {
     }
 
-    public float computeArea() {
+    public final float computeArea() {
         return this.width * this.height;
     }
 
-    public float getWidth() {
+    public final float getWidth() {
         return width;
     }
 
@@ -24,7 +24,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public float getHeight() {
+    public final float getHeight() {
         return height;
     }
 

@@ -5,14 +5,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class RectangleTests {
-
-    Rectangle rectangle;
-
+    private Rectangle rectangle;
 
     @Before
     public void setup() {
         this.rectangle = new Rectangle();
     }
+
     @Test
     public void computeArea_SampleHeightAndWidth_ReturnsCorrectArea() {
         rectangle.setHeight(10);
