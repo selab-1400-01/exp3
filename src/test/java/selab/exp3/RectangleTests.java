@@ -39,12 +39,12 @@ public class RectangleTests {
     @Test
     public void getHeight_SampleHeight_ReturnsCorrectHeight() {
         rectangle.setHeight(20);
-        Assert.assertEquals(20, rectangle.getHeight());
+        Assert.assertEquals(20, rectangle.getHeight(), 1e-10);
     }
 
     @Test
     public void getWidth_SampleWidth_ReturnsCorrectWidth() {
         rectangle.setWidth(30);
-        Assert.assertEquals(30, rectangle.getWidth());
+        Assert.assertEquals(30, rectangle.getWidth(), 1e-10);
     }
 }
